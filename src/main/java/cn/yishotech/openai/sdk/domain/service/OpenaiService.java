@@ -5,8 +5,6 @@ import cn.yishotech.openai.sdk.domain.entity.ImageRequest;
 import okhttp3.sse.EventSourceListener;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 
-import java.util.EventListener;
-
 /**
  * openai服务接口
  *

@@ -122,7 +122,6 @@ public class SparkOpenaiService implements OpenaiService {
         SparkCompletionRequest sparkCompletionRequest = buildSparkCompletionRequest(completionRequest);
         sparkCompletionRequest.setStream(true);
         // 构建请求参数
-        OkHttpClient instance = OkhttpUtil.getInstance();
         String url = getAuthUrl(COMPLETION_URL, properties.getApiKey(), properties.getApiSecret());
         String post = OkhttpUtil.post(url, JSON.toJSONString(sparkCompletionRequest));
         if (StringUtils.isNotBlank(post)) {
